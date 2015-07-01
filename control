@@ -1,0 +1,25 @@
+Source: qhttpengine
+Section: libs
+Priority: extra
+Maintainer: Nathan Osman <nathan@quickmediasolutions.com>
+Build-Depends: debhelper (>= 9), qt5-default (>= 5.1)
+Standards-Version: 3.9.5
+Homepage: https://github.com/nitroshare/qhttpengine
+
+Package: libqhttpengine0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Blah blah blah
+
+Package: libqhttpengine-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libqhttpengine0 (= ${binary:Version})
+Description: Blah blah blah
+
+Package: libqhttpengine-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: Blah blah blah
