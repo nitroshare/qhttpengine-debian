@@ -1,4 +1,4 @@
-usr/include/*
+usr/include/qhttpengine/*
 usr/lib/libqhttpengine.so
 usr/lib/pkgconfig/qhttpengine.pc
 

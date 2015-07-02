@@ -10,16 +10,29 @@ Package: libqhttpengine0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Blah blah blah
+Description: HTTP server for Qt applications
+ QHttpEngine provides a set of classes that enable Qt applications to create an
+ HTTP server capable of serving static files and exposing a public API.
+ .
+ This package provides the shared library required by applications at runtime.
 
 Package: libqhttpengine-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libqhttpengine0 (= ${binary:Version})
-Description: Blah blah blah
+Description: HTTP server for Qt applications
+ QHttpEngine provides a set of classes that enable Qt applications to create an
+ HTTP server capable of serving static files and exposing a public API.
+ .
+ This package provides the files necessary for developing applications that use
+ the library.
 
 Package: libqhttpengine-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
-Description: Blah blah blah
+Description: HTTP server for Qt applications
+ QHttpEngine provides a set of classes that enable Qt applications to create an
+ HTTP server capable of serving static files and exposing a public API.
+ .
+ This package contains the documentation for the library.
