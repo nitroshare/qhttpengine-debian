@@ -36,3 +36,13 @@ Description: HTTP server for Qt applications
  HTTP server capable of serving static files and exposing a public API.
  .
  This package contains the documentation for the library.
+
+Package: libqhttpengine-examples
+Section: x11
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: HTTP server for Qt applications
+ QHttpEngine provides a set of classes that enable Qt applications to create an
+ HTTP server capable of serving static files and exposing a public API.
+ .
+ This package provides a set of examples that use the library.

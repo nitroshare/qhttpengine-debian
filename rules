@@ -4,4 +4,7 @@
 	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DBUILD_DOC=ON -DBUILD_TESTS=ON
+	dh_auto_configure -- \
+		-DBUILD_DOC=ON \
+		-DBUILD_EXAMPLES=ON \
+		-DBUILD_TESTS=ON
