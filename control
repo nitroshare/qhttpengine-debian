@@ -16,6 +16,17 @@ Description: HTTP server for Qt applications
  .
  This package provides the shared library required by applications at runtime.
 
+Package: libqhttpengine-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqhttpengine0 (= ${binary:Version})
+Description: HTTP server for Qt applications
+ QHttpEngine provides a set of classes that enable Qt applications to create an
+ HTTP server capable of serving static files and exposing a public API.
+ .
+ This package provides debug symbols for the library.
+
 Package: libqhttpengine-dev
 Section: libdevel
 Architecture: any
