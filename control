@@ -18,7 +18,6 @@ Description: HTTP server for Qt applications
 
 Package: libqhttpengine-dbg
 Section: debug
-Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqhttpengine0 (= ${binary:Version})
 Description: HTTP server for Qt applications
