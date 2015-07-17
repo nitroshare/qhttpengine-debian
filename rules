@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 %:
 	dh $@ --dbg-package=libqhttpengine-dbg
 
@@ -7,4 +9,5 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 		-DBUILD_DOC=ON \
 		-DBUILD_EXAMPLES=ON \
-		-DBUILD_TESTS=ON
+		-DBUILD_TESTS=ON \
+        -DLIB_INSTALL_DIR="lib/$(DEB_HOST_MULTIARCH)"
