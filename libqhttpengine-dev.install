@@ -1,4 +1,4 @@
 usr/include/qhttpengine/*
+usr/lib/cmake/*
 usr/lib/libqhttpengine.so
-usr/lib/pkgconfig/qhttpengine.pc
 
