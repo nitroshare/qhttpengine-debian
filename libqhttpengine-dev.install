@@ -1,4 +1,4 @@
-usr/include/qhttpengine/*
-usr/lib/cmake/*
-usr/lib/libqhttpengine.so
+usr/include/qhttpengine
+usr/lib/*/libQHttpEngine.so
+usr/lib/*/cmake/QHttpEngine
 
