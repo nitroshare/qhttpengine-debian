@@ -1,5 +1,5 @@
-qhttpengine (0.1.0) unstable; urgency=low
+qhttpengine (0.1.0-1) unstable; urgency=low
 
-  * Initial release
+  * Initial release (Closes: #811224)
 
- -- Nathan Osman <nathan@quickmediasolutions.com>  Wed, 01 Jul 2015 15:53:25 -0700
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Sat, 16 Jan 2016 16:19:01 -0800
