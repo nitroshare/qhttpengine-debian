@@ -3,7 +3,7 @@ Section: libs
 Priority: extra
 Maintainer: Nathan Osman <nathan@quickmediasolutions.com>
 Build-Depends: debhelper (>= 9), cmake (>= 2.8.11), qt5-default (>= 5.1), doxygen
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: https://github.com/nitroshare/qhttpengine
 
 Package: libqhttpengine0
