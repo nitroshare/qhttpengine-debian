@@ -10,4 +10,15 @@ override_dh_auto_configure:
 		-DBUILD_DOC=ON \
 		-DBUILD_EXAMPLES=ON \
 		-DBUILD_TESTS=ON \
-        -DLIB_INSTALL_DIR="lib/$(DEB_HOST_MULTIARCH)"
+		-DLIB_INSTALL_DIR=lib/$(DEB_HOST_MULTIARCH)
+
+override_dh_auto_install-arch:
+	dh_auto_install
+	# Remove the bundled jquery file so that it can be replaced
+	rm $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/QHttpEngine/examples/chatserver/static/js/jquery.min.js
+
+override_dh_link:
+	dh_link
+	# Create a symbolic link to the system jquery
+	dh_link -p libqhttpengine-examples /usr/share/javascript/jquery/jquery.min.js \
+		usr/lib/$(DEB_HOST_MULTIARCH)/QHttpEngine/examples/chatserver/static/js/jquery.min.js

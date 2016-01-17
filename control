@@ -57,7 +57,8 @@ Package: libqhttpengine-examples
 Section: x11
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         libjs-jquery
 Description: HTTP server for Qt applications - examples
  QHttpEngine provides a set of classes that enable Qt applications to create an
  HTTP server capable of serving static files and exposing a public API.

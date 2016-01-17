@@ -1,5 +1,2 @@
 # GPG signatures are not available from upstream
 qhttpengine source: debian-watch-may-check-gpg-signature
-
-# Example application includes minified jQuery
-qhttpengine source: source-contains-prebuilt-javascript-object
