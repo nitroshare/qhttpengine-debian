@@ -2,4 +2,3 @@ usr/include/QHttpEngine
 usr/lib/*/libQHttpEngine.so
 usr/lib/*/cmake/QHttpEngine
 usr/lib/*/pkgconfig/QHttpEngine.pc
-
