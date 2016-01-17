@@ -10,9 +10,9 @@ Standards-Version: 3.9.6
 Homepage: https://github.com/nitroshare/qhttpengine
 
 Package: libqhttpengine0
-Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
 Description: HTTP server for Qt applications
  QHttpEngine provides a set of classes that enable Qt applications to create an
  HTTP server capable of serving static files and exposing a public API.
@@ -22,8 +22,10 @@ Description: HTTP server for Qt applications
 Package: libqhttpengine-dbg
 Section: debug
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqhttpengine0 (= ${binary:Version})
-Description: HTTP server for Qt applications
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libqhttpengine0 (= ${binary:Version})
+Description: HTTP server for Qt applications - debug info
  QHttpEngine provides a set of classes that enable Qt applications to create an
  HTTP server capable of serving static files and exposing a public API.
  .
@@ -32,8 +34,9 @@ Description: HTTP server for Qt applications
 Package: libqhttpengine-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libqhttpengine0 (= ${binary:Version})
-Description: HTTP server for Qt applications
+Depends: ${misc:Depends},
+         libqhttpengine0 (= ${binary:Version})
+Description: HTTP server for Qt applications - development files
  QHttpEngine provides a set of classes that enable Qt applications to create an
  HTTP server capable of serving static files and exposing a public API.
  .
@@ -44,7 +47,7 @@ Package: libqhttpengine-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
-Description: HTTP server for Qt applications
+Description: HTTP server for Qt applications - documentation
  QHttpEngine provides a set of classes that enable Qt applications to create an
  HTTP server capable of serving static files and exposing a public API.
  .
@@ -53,8 +56,9 @@ Description: HTTP server for Qt applications
 Package: libqhttpengine-examples
 Section: x11
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: HTTP server for Qt applications
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: HTTP server for Qt applications - examples
  QHttpEngine provides a set of classes that enable Qt applications to create an
  HTTP server capable of serving static files and exposing a public API.
  .
