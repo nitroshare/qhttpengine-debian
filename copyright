@@ -1,10 +1,9 @@
-Format: http://dep.debian.net/deps/dep5
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: qhttpengine
-Upstream-Contact: Nathan Osman <nathan@quickmediasolutions.com>
 Source: https://github.com/nitroshare/qhttpengine
 
 Files: *
-Copyright: 2015 Nathan Osman <nathan@quickmediasolutions.com>
+Copyright: Copyright (C) 2016 Nathan Osman
 License: MIT
 
 License: MIT
