@@ -1,2 +1,6 @@
 # GPG signatures are not available from upstream
 qhttpengine source: debian-watch-may-check-gpg-signature
+
+# jQuery is replaced with symlink to file in libjs-jquery package
+qhttpengine source: source-contains-prebuilt-javascript-object
+qhttpengine source: source-is-missing
