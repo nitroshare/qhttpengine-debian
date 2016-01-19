@@ -1,6 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: qhttpengine
 Source: https://github.com/nitroshare/qhttpengine
+Files-Excluded: examples/chatserver/static/js/jquery.min.js
 
 Files: *
 Copyright: Copyright (C) 2016 Nathan Osman

@@ -1,3 +1,5 @@
 version=3
-opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/<project>-$1\.tar\.gz/ \
+opts=\
+filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/qhttpengine-$1\.tar\.gz/,\
+repacksuffix=+dfsg1 \
   https://github.com/nitroshare/qhttpengine/tags .*/v?(\d\S*)\.tar\.gz
