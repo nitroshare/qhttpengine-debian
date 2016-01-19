@@ -2,8 +2,18 @@
 
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
+# Upstream bundles a minified copy of jQuery so we replace it with a symlink to
+# the copy in libjs-jquery. The file is embedded in the binary and also copied
+# to the examples directory.
+JQUERY_SRC = /usr/share/javascript/jquery/jquery.min.js
+JQUERY_DEST = examples/chatserver/static/js/jquery.min.js
+
 %:
 	dh $@ --dbg-package=libqhttpengine-dbg
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f $(CURDIR)/$(JQUERY_DEST)
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
@@ -11,14 +21,9 @@ override_dh_auto_configure:
 		-DBUILD_EXAMPLES=ON \
 		-DBUILD_TESTS=ON \
 		-DLIB_INSTALL_DIR=lib/$(DEB_HOST_MULTIARCH)
-
-override_dh_auto_install-arch:
-	dh_auto_install
-	# Remove the bundled jquery file so that it can be replaced
-	rm $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/QHttpEngine/examples/chatserver/static/js/jquery.min.js
+	ln -s $(JQUERY_SRC) $(CURDIR)/$(JQUERY_DEST)
 
 override_dh_link:
 	dh_link
-	# Create a symbolic link to the system jquery
-	dh_link -p libqhttpengine-examples /usr/share/javascript/jquery/jquery.min.js \
-		usr/lib/$(DEB_HOST_MULTIARCH)/QHttpEngine/examples/chatserver/static/js/jquery.min.js
+	dh_link -p libqhttpengine-examples $(JQUERY_SRC) \
+	    usr/lib/$(DEB_HOST_MULTIARCH)/QHttpEngine/$(JQUERY_DEST)
