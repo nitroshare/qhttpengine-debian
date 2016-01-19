@@ -1,4 +1,4 @@
-qhttpengine (0.1.0-1) unstable; urgency=low
+qhttpengine (0.1.0+dfsg1-1) unstable; urgency=low
 
   * Initial release (Closes: #811224)
 
