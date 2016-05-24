@@ -9,7 +9,7 @@ JQUERY_SRC = /usr/share/javascript/jquery/jquery.min.js
 JQUERY_DEST = examples/chatserver/static/js/jquery.min.js
 
 %:
-	dh $@ --dbg-package=libqhttpengine-dbg
+	dh $@
 
 override_dh_auto_clean:
 	dh_auto_clean
