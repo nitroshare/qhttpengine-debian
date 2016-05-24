@@ -8,6 +8,9 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 JQUERY_SRC = /usr/share/javascript/jquery/jquery.min.js
 JQUERY_DEST = examples/chatserver/static/js/jquery.min.js
 
+# The test suite fails if $HOME isn't set to a valid directory
+HOME = /tmp
+
 %:
 	dh $@
 
