@@ -24,7 +24,7 @@ Package: libqhttpengine-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
-         libqhttpengine0 (= ${binary:Version})
+         libqhttpengine1 (= ${binary:Version})
 Description: HTTP server for Qt applications - development files
  QHttpEngine provides a set of classes that enable Qt applications to create an
  HTTP server capable of serving static files and exposing a public API.
