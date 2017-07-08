@@ -29,4 +29,4 @@ override_dh_auto_configure:
 override_dh_link:
 	dh_link
 	dh_link -p libqhttpengine-examples $(JQUERY_SRC) \
-	    usr/lib/$(DEB_HOST_MULTIARCH)/QHttpEngine/$(JQUERY_DEST)
+	    usr/lib/$(DEB_HOST_MULTIARCH)/qhttpengine/$(JQUERY_DEST)

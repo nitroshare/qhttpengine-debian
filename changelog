@@ -1,11 +1,14 @@
 qhttpengine (1.0.0+dfsg1-1) unstable; urgency=low
 
-  * Add QHttpMiddleware between server and handlers
+  * Rename a number of classes
+  * Move all classes into QHttpEngine namespace
+  * Add middleware between server and handlers
   * Add HTTP basic auth and local file-based auth middleware
   * Enhance the capability of QObjectHandler
   * Add support for HTTP range requests
+  * Add support for proxying HTTP requests
 
- -- Nathan Osman <nathan@quickmediasolutions.com>  Fri, 09 Dec 2016 23:44:52 -0800
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Fri, 07 Jul 2017 22:45:07 -0700
 
 qhttpengine (0.1.0+dfsg1-1) unstable; urgency=low
 
