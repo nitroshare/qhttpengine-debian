@@ -4,7 +4,7 @@ Source: https://github.com/nitroshare/qhttpengine
 Files-Excluded: examples/chatserver/static/js/jquery.min.js
 
 Files: *
-Copyright: Copyright (C) 2016 Nathan Osman
+Copyright: Copyright (C) 2017 Nathan Osman
 License: MIT
 
 License: MIT

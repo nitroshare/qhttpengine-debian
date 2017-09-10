@@ -8,7 +8,7 @@ qhttpengine (1.0.0+dfsg1-1) unstable; urgency=low
   * Add support for HTTP range requests
   * Add support for proxying HTTP requests
 
- -- Nathan Osman <nathan@quickmediasolutions.com>  Fri, 07 Jul 2017 22:45:07 -0700
+ -- Nathan Osman <nathan@quickmediasolutions.com>  Thu, 07 Sep 2017 14:13:07 -0700
 
 qhttpengine (0.1.0+dfsg1-1) unstable; urgency=low
 
