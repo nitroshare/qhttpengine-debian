@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 9),
                qtbase5-dev (>= 5.4),
                doxygen,
                libjs-jquery
-Standards-Version: 4.1.1.1
+Standards-Version: 4.1.0
 Homepage: https://github.com/nitroshare/qhttpengine
 
 Package: libqhttpengine1
